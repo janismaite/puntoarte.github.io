@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUNTO ARTE - Toda la selección de libros coreanos</title>
+    <link rel="stylesheet" href="estilos-inicio.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/24e5709cfe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- menú comienza -->
+    <header class="menu">
+        <div class="container4">
+            <nav>
+                <img src="./Logo.png" class="logo">
+
+                <ul>
+                    <li><a href="./Inicio.html" class="nav-items">Inicio</a></li>
+                    <li><a href="./Catalogo.html" class="nav-items">Catalogo</a></li>
+                    <li><a href="./Reseñas.html" class="nav-items">Reseñas</a></li>
+                    <li><a href="./Contacto.html" class="nav-items">Contacto</a></li>
+                </ul>
+
+                <a href="#"><img src="./cart.png" class="cart-icon"></a>
+
+            </nav>
+        </div>
+        <!-- menú termina -->
+
+        <!-- slider destacados comienzo-->
+        <section class="content-header">
+
+            <div class="slider">
+                <div class="slides">
+
+                    <!--radio buttons comienza-->
+                    <input type="radio" name="radio-button" id="radio1">
+                    <input type="radio" name="radio-button" id="radio2">
+                    <input type="radio" name="radio-button" id="radio3">
+                    <!--radio buttons termina-->
+
+                    <!--imagenes slider comienza-->
+                    <div class="slide inicio">
+                        <img src="./1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./3.png" alt="">
+                    </div>
+                    <!--imagenes slider termina-->
+
+                    <!-- navegación automática comienza -->
+                    <div class="navegation-auto">
+                        <div class="auto-button1"></div>
+                        <div class="auto-button2"></div>
+                        <div class="auto-button3"></div>
+                    </div>
+                    <!-- navegación automática comienza -->
+                </div>
+
+                <!-- navegación manual comienza -->
+                <div class="navegation-manual">
+                    <label for="radio1" class="manual-button"></label>
+                    <label for="radio2" class="manual-button"></label>
+                    <label for="radio3" class="manual-button"></label>
+                </div>
+                <!-- navegación manual termina -->
+            </div>
+
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function () {
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if (counter > 3) {
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
+        </section>
+
+        <!-- Onda blanca -->
+        <div class="menu-onda" style="overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: whitesmoke;"></path>
+            </svg></div>
+    </header>
+
+    <!-- Novedades -->
+    <main>
+        <section id="product1" class="section-p1">
+            <div class="container">
+                <h2 class="subtitle">Novedades</h2>
+                <div class="pro-container">
+                    <div class="nov-grid">
+                        <img src="./l1.jpg" alt="">
+                        <h5>Quién sabe mañana si seguiremos aquí</h5>
+                        <h4>$2000,00</h4>
+                        <div class="cart2">
+                            <a href="./Compras.html"><img src="./cart2.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="nov-grid">
+                        <img src="./l3.jpg" alt="">
+                        <h5>La chica de los siete nombres</h5>
+                        <h4>$2300,00</h4>
+                        <div class="cart2">
+                            <a href="./Compras2.html"><img src="./cart2.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="nov-grid">
+                        <img src="./l5.jpg" alt="">
+                        <h5>Solo las mujeres desaparecen</h5>
+                        <h4>$2000,00</h4>
+                        <div class="cart2">
+                            <a href="./Compras4.html"><img src="./cart2.png"></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+
+    <!-- Reseñas -->
+
+    <section id="banners" class="reseñas">
+        <div class="banner-box">
+            <h2>Reseñas</h2>
+            <h4>¿Te gusta escribir reseñas?<br>
+                Compártela en PUNTO ARTE. <br>
+                Aquí encontrarás todo lo que necesitas <br> para publicarla.</h4>
+            <button class="r-btn" onclick="location.href='./Reseñas.html'">Más información</button>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h2>Redes sociales</h2>
+            <h4>Sigue nuestras redes:</h4><br>
+            <div class="icons">
+                <span>
+                    <a class="fa-brands fa-facebook" href="./Inicio.html"></a>
+                </span>
+                <span>
+                    <a class="fa-brands fa-square-instagram" href="./Inicio.html"></a>
+                </span>
+                <span>
+                    <a class="fa-brands fa-square-whatsapp" href="./Inicio.html"></a>
+                </span>
+            </div>
+        </div>
+    </section>
+</body>

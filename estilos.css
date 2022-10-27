@@ -1,0 +1,255 @@
+/* NAVEGACIÓN */
+.container4 {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu, .container4 {
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.menu {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    width: 90px;
+}
+
+.cart-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav ul {
+    flex: 1;
+    text-align: left;
+    padding-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #a8c99e;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+
+.nav-items {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav-items--cta {
+    border: 1px solid black;
+    display: none;
+}
+
+        /* menu termina*/
+
+/* RESEÑAS */
+body.reseñas {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background-color: #a8c99e;
+}
+
+section.pagreseñas {
+    background-color: white;
+    border-radius: 10px;
+	border: solid 1px #e47f83;
+    padding: 2%;
+    width: 60%;
+    margin: 15px auto 15px auto;
+    align-content: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+section.pagreseñas input,
+textarea,
+select {
+    border-radius: 9px;
+    padding: 5px;
+    margin: 1%;
+    width: 75%;
+    font-size: medium;
+    border: solid 2px #e47f83;
+    font-family: 'Raleway', sans-serif;
+}
+
+.pagreseñas button:hover {
+    background-color: #a8c99e;
+    color: white;
+}
+
+section.pagreseñas button {
+    border-style: hidden;
+    border-radius: 2px;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pagreseñas h2 {
+		color: #e47f83;
+}
+
+/* CATÁLOGO */
+body.pagcatalogo {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background-color: #e47f83;
+    }
+
+.catalogo { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.producto {
+    display: inline;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    line-height: 60px;
+    background-color: white;
+    width: 200px;
+    height: 280px;
+    border-radius: 10px;
+    line-height: 10px;
+}
+
+.producto img {
+    border-radius: 5px;
+    width: 140px;
+    height: 180px;
+}
+
+.producto p {
+    font-size: 14px;
+}
+
+.producto p a {
+    color: #a8c99e;
+    text-decoration: none;
+    border: solid 1px;
+    padding: 4px;
+}
+
+.producto p a:visited {
+    color: #e8ae96;
+}
+
+.producto p a:hover {
+    background-color: #a8c99e;
+    color: white;
+}
+
+/* CONTACTO */
+body.contacto {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.pagcontacto {
+    display: flex;
+    flex-flow: wrap-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto2 {
+    flex: 1;
+    background-image: url(./b2.png);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contacto1 h2 {
+	color: #e47f83;
+}
+
+.contacto1 {
+    flex: 2;
+    padding: 20px;
+    margin: 30px;
+    min-width: 300px;
+    border-radius: 10px;
+}
+
+.contacto1 input,
+.contacto1 textarea {
+    border-radius: 5px;
+    padding: 8px;
+    border: solid lightgrey 1px;
+    width: 70%;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    background-color: whitesmoke;
+}
+
+body.contacto iframe {
+    border-radius: 10px;
+}
+
+.contacto button {
+    background-color: #a8c99e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.contacto button:hover {
+    background: #708f67;
+}
+
+.contacto span {
+    line-height: 25px;
+    font-size: 15px;
+}

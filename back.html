@@ -1,0 +1,618 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libros.css">
+    <style>
+        body{background-color: whitesmoke;font-family: Arial, Helvetica, sans-serif;}
+        
+        #menu {
+            background-color: #a8c99e;
+        }
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #menu ul li{
+            display: inline-block;
+        }
+        #menu ul li a{
+            text-decoration: none;
+            display: block;
+            padding: 15px 50px;
+            color: black          
+        }
+        #menu ul li a:hover{
+            background-color: #8b9e86;
+        }
+        .compras{
+            float: right;
+        }
+    </style>
+</head>
+
+<div id="menu">
+    <ul>
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Catalogo.html">Catalogo</a></li>
+        <li><a href="Reseñas.html">Reseñas</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li class="compras"><a href="Compras.html">Carrito de compras</a></li>
+    </ul>
+</div>
+
+
+
+
+<br><br><br>
+
+
+<!-- Para celular -->
+<div class="mobile">
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="more"><botton>Más</botton></div>
+</div>
+<div class="links">
+    <a href="Inicio.html">Inicio</a>
+    <a href="Catalogo.html">Catalogo</a>
+    <a href="Reseñas.html">Reseñas</a>
+    <a href="Contacto.html">Contacto</a>
+    <a href="Compras.html">Carrito de compras</a>
+</div>
+
+
+
+<nav><!-- Navegación -->
+    <a href="Inicio.html">Inicio</a>
+    <a href="Catalogo.html">Catalogo</a>
+    <a href="Reseñas.html">Reseñas</a>
+    <a href="Contacto.html">Contacto</a>
+    <a href="Compras.html">Carrito de compras</a>
+</nav>
+
+<main>Información
+    asdas
+
+</main>
+<footer>
+contacto
+</footer>
+
+
+<h2 class="title">Nombre</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Officiis, itaque unde quam, quo necessitatibus ab perferendis sapiente quis perspiciatis
+                    eius in ipsum natus possimus asperiores assumenda tempora repellat aperiam architecto!
+                </p>
+
+                <div class="box">
+                    <h3>Libro</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <h3>Libro</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <h3>Libro</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <section class="content pop">
+                <h2 class="title">Populares</h2>
+                <div class="box">
+                    <h3>Libro</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <h3>Libro</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="box">
+                    <h3>Libro</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+            </section>
+
+
+            nav {
+                background-color: #a8c99e;
+                color: white;
+                width: 100%;
+                flex-flow: row nowrap;
+            }
+            
+            nav .logo {
+                min-width: 250px;
+            }
+            
+            nav a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 20px 50px;
+                margin-right: 0px;
+            }
+            
+            nav a:hover {
+                color: black;
+                background-color: #8b9e86;
+            }
+            
+            nav .menu {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0;
+            }
+            
+            nav .menu .primario,
+            nav .menu .secundario {
+                display: flex;
+            }
+            
+
+
+
+
+            /*header con slides*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.slider {
+    width: 1000px;
+    height: 563 px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 563px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1000px;
+    height: 563px;
+}
+
+/*slider manual*/
+
+.navegation-manual {
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-button {
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-button:not(last-child) {
+    margin-right: 20px;
+
+}
+
+.manual-button:hover {
+    background: white;
+}
+
+#radio1:checked~.inicio {
+    margin-left: 0;
+}
+
+#radio2:checked~.inicio {
+    margin-left: -20%;
+}
+
+#radio3:checked~.inicio {
+    margin-left: -40%;
+}
+
+/*slider manual*/
+
+.navegation-auto {
+    position: absolute;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    margin-top: -460px;
+}
+
+.navegation-auto div {
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navegation-auto div:not(last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked~.navegation-auto .auto-button1 {
+    background: black;
+}
+
+#radio2:checked~.navegation-auto .auto-button2 {
+    background: black;
+}
+
+#radio3:checked~.navegation-auto .auto-button3 {
+    background: black;
+}
+
+
+ <!-- slider destacados comienzo-->
+ <section class="content header">
+
+    <div class="slider">
+        <div class="slides">
+
+            <!--radio buttons comienza-->
+            <input type="radio" name="radio-button" id="radio1">
+            <input type="radio" name="radio-button" id="radio2">
+            <input type="radio" name="radio-button" id="radio3">
+            <!--radio buttons termina-->
+
+            <!--imagenes slider comienza-->
+            <div class="slide inicio">
+                <img src="1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="3.jpg" alt="">
+            </div>
+            <!--imagenes slider termina-->
+
+            <!-- navegación automática comienza -->
+            <div class="navegation-auto">
+                <div class="auto-button1"></div>
+                <div class="auto-button2"></div>
+                <div class="auto-button3"></div>
+            </div>
+            <!-- navegación automática comienza -->
+        </div>
+        <!-- navegación manual comienza -->
+        <div class="navegation-manual">
+            <label for="radio1" class="manual-button"></label>
+            <label for="radio2" class="manual-button"></label>
+            <label for="radio3" class="manual-button"></label>
+        </div>
+        <!-- navegación manual termina -->
+    </div>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+</section>
+
+
+
+SLIDER QUE YA ETSABA
+
+/*slider manual*/
+
+.navegation-manual {
+    position: absolute;
+    width: 1200px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-button {
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-button:not(last-child) {
+    margin-right: 20px;
+
+}
+
+.manual-button:hover {
+    background: white;
+}
+
+#radio1:checked~.inicio {
+    margin-left: 0;
+}
+
+#radio2:checked~.inicio {
+    margin-left: -20%;
+}
+
+#radio3:checked~.inicio {
+    margin-left: -40%;
+}
+
+/*slider manual*/
+
+.navegation-auto {
+    position: absolute;
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    margin-top: -460px;
+}
+
+.navegation-auto div {
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navegation-auto div:not(last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked~.navegation-auto .auto-button1 {
+    background: black;
+}
+
+#radio2:checked~.navegation-auto .auto-button2 {
+    background: black;
+}
+
+#radio3:checked~.navegation-auto .auto-button3 {
+    background: black;
+}
+
+
+SLIDER CSS QUE YA ESTA
+
+.slider {
+    width: 1200px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 1200%;
+    height: 450px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1200px;
+    height: 450px;
+}
+
+/*slider manual*/
+
+.navegation-manual {
+    position: absolute;
+    width: 1200px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-button {
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-button:not(last-child) {
+    margin-right: 20px;
+}
+
+.manual-button:hover {
+    background: grey;
+}
+
+#radio1:checked~.inicio {
+    margin-left: 0;
+}
+
+#radio2:checked~.inicio {
+    margin-left: -20%;
+}
+
+#radio3:checked~.inicio {
+    margin-left: -40%;
+}
+
+/*slider manual*/
+
+.navegation-auto {
+    position: absolute;
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    margin-top: -460px;
+}
+
+.navegation-auto div {
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navegation-auto div:not(last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked~.navegation-auto .auto-button1 {
+    background: black;
+}
+
+#radio2:checked~.navegation-auto .auto-button2 {
+    background: black;
+}
+
+#radio3:checked~.navegation-auto .auto-button3 {
+    background: black;
+}
+
+<section class="reseñas container">
+    <div class="card">
+        <h2 class="subtitle">Reseñas</h2>
+        <p class="reseñas-copy">¿Te gusta escribir reseñas?
+        <p>Compártela en Punto Arte.</p>
+            Compártela en Punto Arte.
+            Aquí encontrarás todo lo que necesitas para publicarla.</p>
+        <a href="#" class="reseñas-button">Más Información</a>
+    </div>
+</section>
+
+/*novedades*/
+
+<section class="catalogo">
+    <div class="container">
+        <h2 class="subtitle">Novedades</h2>
+        <div class="nov-grid">
+
+            <article class="nov-item">
+                <img src="../Catalogo/l1.jpg" class="nov-img">
+                <div class="nov-hover">
+                    <h2 class="nov-title">Ver</h2>
+                </div>
+            </article>
+
+            <article class="nov-item">
+                <img src="../Catalogo/l3.jpg" class="nov-img">
+                <div class="nov-hover">
+                    <h2 class="nov-title">Ver</h2>
+                </div>
+            </article>
+
+            <article class="nov-item">
+                <img src="../Catalogo/l6.jpg" class="nov-img">
+                <div class="nov-hover">
+                    <h2 class="nov-title">Ver</h2>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+/*Catalogo*/
+.catalogo {
+    background: whitesmoke;
+}
+
+.nov-grid {
+    display: grid;
+    justify-items: center;
+    height: 600px;
+    grid-template-areas:
+        "l1 l2 l3";
+}
+
+.nov-item {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.nov-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.nov-hover {
+    position: absolute;
+    background: #e47f838c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+}
+
+.nov-item:hover .nov-hover {
+    transform: translateX(0%);
+}
+
+
+594*854
+
+RESEÑAS 
+
+.reseñas-button {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border: 2px solid var(--color-secundary);
+    padding: 10px 30px;
+    color: white;
+    font-weight: 400;
+    background-color: var(--color-secundary);
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+.subtitle-text {
+    font-size: 15px;
+}
+
+<section class="reseñas container">
+    <h2 class="subtitle2">Reseñas</h2>
+    <p class="subtitle-text">¿Te gusta escribir reseñas?<br>
+        Compártela en PUNTO ARTE. <br>
+        Aquí encontrarás todo lo que necesitas <br> para publicarla.</p>
+    <br>
+    <a href="#" class="reseñas-button">Más Información > </a>
+</section>
