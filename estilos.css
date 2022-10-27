@@ -128,9 +128,29 @@ section.pagreseñas button {
     cursor: pointer;
 }
 
-.pagreseñas h2 {
+.form h2 {
 		color: #e47f83;
-}
+            animation-name: movimientoColor;
+            animation-duration: 5s;
+            animation-timing-function:ease;
+        }
+
+        @keyframes movimientoColor {
+            0% {
+                color: #708f67;
+                margin-left: 80%;
+                width: 200%;
+            }
+            50% {
+                margin-left: 0%;
+                width: 100%;
+                background: #a8c99e;
+                border-radius: 50px;
+            }
+            100% {
+                background: none;
+            }
+        }
 
 /* CATÁLOGO */
 body.pagcatalogo {
